@@ -3,26 +3,35 @@ const app = Vue.createApp({
         return{
             books:[
                 {
-                    title:"Js",
-                    author: "Viking",
-                    age: 20,
-                    img: "img/1.jpg",
+                    name :"Js",
+                    age: "1 year",
+                    img: "img/axolotl.jpg",
                     isFav:true
                 },
                 {
-                    title:"Vue",
-                    author: "Stone",
-                    age: 24,
-                    img: "img/2.jpg",
+                    name :"Js",
+                    age: "1 year",
+                    img: "img/crab.jpg",
                     isFav:true
                 },
                 {
-                    title:"Laravel",
-                    author: "Viking",
-                    age: 20,
-                    img: "img/3.jpg",
+                    name :"Js",
+                    age: "1 year",
+                    img: "img/dog.jpg",
                     isFav:true
-                }
+                },
+                {
+                    name :"Js",
+                    age: "1 year",
+                    img: "img/jellyfish.jpg",
+                    isFav:true
+                },
+                {
+                    name :"Js",
+                    age: "1 year",
+                    img: "img/octopus.jpg",
+                    isFav:true
+                },
             ],
             showbook:true,
             link:"https://www.youtube.com"
