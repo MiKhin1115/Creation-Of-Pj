@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100dvh;
+}
+.nav{
+    background-color: gold;
+    width: 1535px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    width: 350px;
+    height: 40px;
+}
+.search-text{
+    width: 280px;
+    height: 40px;
+    border: 0;
+}
+.search-text:focus-visible {
+    outline:  0;
+}
+.search-box{
+    display: none;
+    width: 350px;
+    height: 250px;
+    background-color: rgba(255, 217, 0, 0.252);
+    position: fixed;
+    margin-left: 590px;
+    border-radius: 15px;
+    overflow-y: scroll;
+}
+.search-box::-webkit-scrollbar {
+    display: none;
+  }
+.s-column{
+    padding: 20px;
+}
+.s-text {
+    font-size: larger;
+}
+.bottom{
+    display: flex;
+}
+.center{
+    width: 1200px;
+    height: 687px;
+    background-color: rgb(160, 204, 186);
+    
+}
+.right{
+    width:350px;
+    height: 687px;
+    background-color: rgb(216, 224, 221);
+    
+}
+.o-profile{
+    width: 350px;
+    height: 250px;
+    background-color: bisque;
+}
+.image{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.image img{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+}
+.o-name{
+    padding: 10px;
+}
+.follow{
+    display: flex;
+   
+}
+.follower{
+    flex-grow: 2.5;
+}
+.following{
+    flex-grow: 2.5;
+}
+.follower-context{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.following-context{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.o-entities{
+    flex-direction: column;
+}
+.home, .wishList, .buy, .sell, .logOut{
+    padding: 28px  20px 28px;
+}
