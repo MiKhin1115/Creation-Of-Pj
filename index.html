@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3.3.8"></script>
+    <style>
+        .favourite{
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <h1>vue Js</h1>
+    <div id="app">
+       
+            <div v-if="showbook" v-for="b in filteredBook" :class={favourite:b.isFav} @click="b.isFav =!b.isFav">
+            <h3>Book- {{b.title}}</h3>
+            <h3>Author- {{b.author}}</h3>
+            <h3>Age- {{b.age}}</h3>
+            <img :src="b.img" width="200" height="100">
+            <hr>
+        </div> 
+        <button @click="showbook = !showbook">
+            <span v-if="showbook">hide</span>
+            <span v-if="!showbook">show</span>
+        </button>
+        <br>
+        
+        <a :href="link">YouTube</a>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
